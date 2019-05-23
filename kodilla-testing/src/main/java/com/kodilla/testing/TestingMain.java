@@ -11,26 +11,28 @@ public class TestingMain {
 
         if (result.equals("theForumUser")){
             System.out.println("test OK");
-        } else {
+        }
+        else{
             System.out.println("Error!");
         }
 
-        Calculator calculator = new Calculator(1, 1);
-        calculator.sum();
-        calculator.subtract();
-        int sumTest = numberA + numberB;
-        int subtractTest = numberA - numberB;
-        if (sumAB == sumTest){
-             System.out.println("Adding is OK");
+        Calculator calculator = new Calculator();
+        int calculatorAdd = calculator.addAB(1, 1);
+
+        if(calculatorAdd == 2){
+            System.out.println("Adding test OK");
         }
         else{
-             System.out.println("Adding is wrong!!!");
+            System.out.println("Error!");
         }
-        if (subtractAB == subtractTest){
-            System.out.println("Subtract is OK");
+
+        int calculatorSubstract = calculator.substractAB(1, 1);
+
+        if(calculatorSubstract == 0){
+            System.out.println("Substract test OK");
         }
-        else {
-            System.out.println("Subtract is wrong!!!");
+        else{
+            System.out.println("Error!");
         }
     }
 }
