@@ -23,7 +23,7 @@ public class Triangle implements Shape {
             double halfOfCircuit = getHalfOfCircuit();
             return heronsPattern(halfOfCircuit);
         } else {
-            return 0;
+            return 0.0;
         }
     }
     private boolean checkTriangleCondition(){
