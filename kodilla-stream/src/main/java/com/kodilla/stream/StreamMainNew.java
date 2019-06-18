@@ -26,7 +26,7 @@ public class StreamMainNew {
                 .filter(user -> user.getPostCount() >= 1)
                 .collect(Collectors.toMap(ForumUser::getUserId, user -> user))
                 .entrySet().stream()
-                .map(entry -> gitentry.getKey() + " : " + entry.getValue())
+                .map(entry -> entry.getKey() + " : " + entry.getValue())
                 .forEach(System.out::println);
     }
 }
