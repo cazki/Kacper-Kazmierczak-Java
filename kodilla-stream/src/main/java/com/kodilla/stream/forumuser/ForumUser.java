@@ -21,7 +21,7 @@ public final class ForumUser {
     public char getSex() {
         return sex;
     }
-    public LocalDate getbirth() {
+    public LocalDate getBirth() {
         return birth;
     }
     public int getPostCount() {

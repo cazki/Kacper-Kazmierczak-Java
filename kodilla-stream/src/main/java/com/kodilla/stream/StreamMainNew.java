@@ -22,11 +22,11 @@ public class StreamMainNew {
         Forum forum = new Forum();
         forum.getUserList().stream()
                 .filter(user -> user.getSex() == 'M')
-                .filter(user -> user.getbirth().getYear() <= 1997)
+                .filter(user -> user.getBirth().getYear() > LocalDate.now().getYear()-20)
                 .filter(user -> user.getPostCount() >= 1)
                 .collect(Collectors.toMap(ForumUser::getUserId, user -> user))
                 .entrySet().stream()
-                .map(entry -> entry.getKey() + " : " + entry.getValue())
+                .map(entry -> gitentry.getKey() + " : " + entry.getValue())
                 .forEach(System.out::println);
     }
 }
