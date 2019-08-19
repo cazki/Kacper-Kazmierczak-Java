@@ -19,7 +19,6 @@ public class ProductOrderService {
 
         if(isRented) {
             informationService.inform(orderRequest.getUser());
-            orderRepository.createOrder(orderRequest.getUser(),orderRequest.getProducts());
             return new OrderDto(orderRequest.getUser(), true);
         } else {
             return new OrderDto(orderRequest.getUser(), false);

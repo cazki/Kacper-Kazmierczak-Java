@@ -1,14 +1,15 @@
 package com.kodilla.good.patterns.challenges;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class OrderRepository {
-    public void createOrder(User user, List<Product> products) {
-        if(products.isEmpty()){
-            System.out.println(user + "! Your shopping cart is empty!");
-        }
-        else {
-            System.out.println("User: " + user + " Buying products: " + products);
-        }
+
+    private Set <Product> productSet = new HashSet<>();
+    public void addProduct(Product product){
+        productSet.add(product);
+    }
+    public boolean checkProduct(Product product){
+        return productSet.contains(product);
     }
 }

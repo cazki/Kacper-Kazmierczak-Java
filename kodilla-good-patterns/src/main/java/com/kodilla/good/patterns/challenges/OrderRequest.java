@@ -7,6 +7,11 @@ public class OrderRequest {
     private User user;
     private List <Product> products = new ArrayList<>();
 
+    public OrderRequest(User user, List<Product> products) {
+        this.user = user;
+        this.products = products;
+    }
+
     public User getUser() {
         return user;
     }
@@ -15,11 +20,4 @@ public class OrderRequest {
         return products;
     }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public void setProducts(List<Product> products) {
-        this.products = products;
-    }
 }
