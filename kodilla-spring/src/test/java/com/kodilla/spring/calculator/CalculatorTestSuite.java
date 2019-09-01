@@ -13,6 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class CalculatorTestSuite {
     @Test
     public void testCalculations(){
+        //Given
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Calculator calculator = context.getBean(Calculator.class);
         //When
@@ -21,7 +22,7 @@ public class CalculatorTestSuite {
         double mulResult = calculator.mul(2, 2);
         double divResult = calculator.div(4, 2);
         //Then
-        Assert.assertEquals(3, addResult,0.01);
+        Assert.assertEquals(3, addResult, 0.01);
         Assert.assertEquals(1, subResult, 0.01);
         Assert.assertEquals(4, mulResult, 0.01);
         Assert.assertEquals(2, divResult, 0.01);
