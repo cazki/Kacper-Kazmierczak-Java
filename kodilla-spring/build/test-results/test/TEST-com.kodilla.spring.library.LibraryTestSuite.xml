@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.spring.library.LibraryTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-02T16:21:28" hostname="DESKTOP-EI9IUBH" time="2.085">
+  <properties/>
+  <testcase name="testSaveToDb" classname="com.kodilla.spring.library.LibraryTestSuite" time="0.908"/>
+  <testcase name="testLoadFromDb" classname="com.kodilla.spring.library.LibraryTestSuite" time="0.728"/>
+  <testcase name="testContext" classname="com.kodilla.spring.library.LibraryTestSuite" time="0.443"/>
+  <system-out><![CDATA[2019-10-02 18:21:28.347  INFO 10472 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kodilla.spring.library.LibraryTestSuite], using SpringBootContextLoader
+2019-10-02 18:21:28.352  INFO 10472 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kodilla.spring.library.LibraryTestSuite]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-10-02 18:21:28.354  INFO 10472 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kodilla.spring.library.LibraryTestSuite]: LibraryTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-10-02 18:21:28.394  INFO 10472 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kodilla.spring.SpringRunner for test class com.kodilla.spring.library.LibraryTestSuite
+2019-10-02 18:21:28.400  INFO 10472 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-10-02 18:21:28.413  INFO 10472 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2d93ece, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4566ade5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d5091c2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@47aa8c6d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@c4ef518, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7c3778f1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@75602834, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@663a1b11, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1da7c4fb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5a90c74e]
+Saving data to the database.
+Loading data from the database
+===== Beans list: ==== >>
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.event.internalEventListenerProcessor
+org.springframework.context.event.internalEventListenerFactory
+springRunner
+calculator
+display
+forumUser
+library
+libraryConfig
+libraryDbController
+boardConfig
+readerConfig
+circle
+shapesFactory
+triangle
+org.springframework.boot.autoconfigure.AutoConfigurationPackages
+getBoard
+getReader
+book1
+createSquare
+chosenShape
+org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+org.springframework.boot.autoconfigure.condition.BeanTypeRegistry
+propertySourcesPlaceholderConfigurer
+org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration
+taskExecutorBuilder
+applicationTaskExecutor
+spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties
+org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor
+org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata
+org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration
+defaultValidator
+methodValidationPostProcessor
+org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration
+mbeanExporter
+objectNamingStrategy
+mbeanServer
+org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration
+standardJacksonObjectMapperBuilderCustomizer
+spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration
+jacksonObjectMapperBuilder
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration
+parameterNamesModule
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration
+jacksonObjectMapper
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration
+jsonComponentModule
+org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration
+stringHttpMessageConverter
+spring.http-org.springframework.boot.autoconfigure.http.HttpProperties
+org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration
+mappingJackson2HttpMessageConverter
+org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration
+org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration
+messageConverters
+org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$LoggingCodecConfiguration
+loggingCodecCustomizer
+org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration
+jacksonCodecCustomizer
+org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration
+org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties
+org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration
+taskSchedulerBuilder
+spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties
+org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration
+restTemplateBuilder
+<< ===== Beans list ====
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
