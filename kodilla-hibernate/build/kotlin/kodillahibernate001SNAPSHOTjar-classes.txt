@@ -1,1 +1,1 @@
-C:\DevJava\kodilla-hibernate\build\classes\java\main\com\kodilla\hibernate\KodillaHibernateApplication.class
+C:\DevJava\kodilla-hibernate\build\classes\java\main\com\kodilla\hibernate\KodillaHibernateApplication.class;C:\DevJava\kodilla-hibernate\build\classes\java\main\com\kodilla\hibernate\task\Task.class;C:\DevJava\kodilla-hibernate\build\classes\java\main\com\kodilla\hibernate\task\dao\TaskDao.class
