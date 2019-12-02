@@ -59,6 +59,6 @@ public class InvoiceDaoTestSuite {
         Assert.assertEquals(itemSize, invoiceReadFromDB.getItems().size());
 
         //CleanUp
-        invoiceDao.delete(id);
+        invoiceDao.delete(invoice);
     }
 }
