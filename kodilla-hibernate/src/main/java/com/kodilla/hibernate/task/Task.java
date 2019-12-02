@@ -8,6 +8,25 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@NamedQueries({
+        @NamedQuery(
+                name = "Task.retrieveLongTask",
+                query = "FROM Task WHERE duration > 10"
+        ),
+        @NamedQuery(
+                name = "Task.retrieveShortTask",
+                query = "FROM Task WHERE duration <= 10"
+        ),
+        @NamedQuery(
+        name = "Task.retrieveTaskWithDurationLongerThan",
+        query = "FROM Task WHERE duration > :DURATION"
+        )
+})
+@NamedNativeQuery(
+        name = "Task.retrieveTaskWithEnoughTime",
+        query = "SELECT * FROM TASK" + "WHERE DATEDIFF(DATA_ADD(CREATED, INTERVAL DURATION DAY), NOW())>5",
+        resultClass = Task.class
+)
 @Entity
 @Table(name = "TASK")
 
